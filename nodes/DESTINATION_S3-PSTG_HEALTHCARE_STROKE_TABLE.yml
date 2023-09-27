@@ -1,0 +1,385 @@
+steps:
+  PSTG_HEALTHCARE_STROKE_TABLE-2c31f74c-7b84-4ba6-83e6-d9172cb60e00:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: DESTINATION_S3
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2f58416d-2726-44dd-a804-8ee053991134
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: PSTG_HEALTHCARE_STROKE_TABLE_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 929456a9-3bb2-4d27-a4b6-08b427814abb
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FILE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c8e05f51-a726-4845-8b63-670ee4d9f29f
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 4a6d004a-1360-4760-9172-58fcf0f6e11c
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _LINE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 433f6844-358a-41f6-9acc-01f8ae04693a
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 0e9c9aca-ccb1-4754-a94a-5d8dbc2a7180
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _MODIFIED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: db959458-b4c0-4656-aa9c-163c6cbbd33f
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 75f9227e-27a6-4773-baf0-42a7d7490de7
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b1274091-7f6d-4220-95d0-b105ee86a3dc
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 2b78ce4e-66dd-41b2-bce8-9082618e0e32
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GENDER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 83fe8466-e575-4a2b-b9ce-0b66f534e8d2
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: dff8d887-0141-46f0-a56c-1d3be7141f45
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: FLOAT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3a1d07ed-c433-48de-ab91-fe0e671045ec
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 008deabb-1829-46ad-9b02-67e4e8fff448
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HYPERTENSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: dede4df6-90cf-404b-8264-932cc71217f2
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: f235d89c-c6b4-4f30-8138-efc8d6374c1f
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HEART_DISEASE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9074fcb3-396c-4ade-80f9-d66e299faaf4
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 9de16b69-37cc-4c06-91c1-5c30048c98a6
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EVER_MARRIED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 26270068-a011-41f5-be59-8aafe70a05d9
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: b4391567-02a2-4631-b6cf-18d1dea99b96
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: WORK_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d09a6e72-1cde-4011-ac7f-cc61b04b1598
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 75f0ed60-135a-4f4c-88f2-43f63169f2df
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RESIDENCE_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9d6777f8-1c34-4ff4-bc1d-32d6ca9b439c
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 7bd3e8e2-4157-465a-9f6c-cfa611dccc33
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: FLOAT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AVG_GLUCOSE_LEVEL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 25648c74-24f9-49e3-a3e0-f7bb23f10e46
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: f50999db-1c66-4b17-93c7-9fae91d1def1
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: BMI
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3fc2fba7-2538-44c7-bb4a-7634baea6751
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 1d44d22b-3fcb-4d72-b8c0-40169e496ae0
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SMOKING_STATUS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 616f702d-d599-4e6e-b7e5-0105c95102d1
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: d0ab41d3-9222-4d9e-a39a-9544a6b22d77
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STROKE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6fe61ecf-c449-4689-a0d5-6b0e1ab08c27
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - columnReference:
+              columnCounter: 951f4d35-6096-45b1-ad2c-4c70dbb6344b
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 83713d48-be3e-4e82-8be6-77d0592936c3
+                    stepCounter: d68acfc7-f19e-4bef-8951-ab7e07e2c113
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 51ef3355-1f9e-4b57-87eb-2b7c42155ced
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemVersion: true
+            name: SYSTEM_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0d9f741e-50f0-4023-bc62-34f2eed76e64
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCurrentFlag: true
+            name: SYSTEM_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ed2477c2-1fe1-4c23-b6e0-d74edad236c2
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 968aa0d5-aad7-4b0d-a250-2b8ecd8222fe
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 41845235-2f24-4069-8f19-6b8509a81d04
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b0999ce5-b40a-4373-8398-a990d6e09743
+              stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE_S3
+                nodeName: HEALTHCARE_STROKE_TABLE
+            join:
+              joinCondition: FROM {{ ref('SOURCE_S3', 'HEALTHCARE_STROKE_TABLE') }} "HEALTHCARE_STROKE_TABLE"
+            name: PSTG_HEALTHCARE_STROKE_TABLE
+            noLinkRefs: []
+      name: PSTG_HEALTHCARE_STROKE_TABLE
+      overrideSQL: false
+      schema: ""
+      sqlType: persistentStage
+      type: sql
+    stepCounter: 2c31f74c-7b84-4ba6-83e6-d9172cb60e00
