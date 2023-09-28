@@ -5,13 +5,13 @@ locations:
   DESTINATION_S3:
     mappingDefinitions:
       "3":
-        database: PROD_TRANSFORMED
-        schema: S3
+        database: PROD_TRANSFORMED_2
+        schema: HORROR_MOVIES_SCHEMA
   SOURCE_S3:
     mappingDefinitions:
       "3":
-        database: PROD_DATABASE
-        schema: S3
+        database: PROD_SOURCE
+        schema: HORROR_MOVIES_SCHEMA
 macros: {}
 packages: {}
 projects: {}
