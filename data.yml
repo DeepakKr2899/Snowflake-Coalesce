@@ -2,16 +2,26 @@ defaultStorageMapping: SOURCE_S3
 installedPackages: {}
 jobs: {}
 locations:
+  DESTINATION_POSTGRES:
+    mappingDefinitions:
+      "3":
+        database: PROD_TRANSFORM
+        schema: POSTGRES
   DESTINATION_S3:
     mappingDefinitions:
       "3":
-        database: PROD_TRANSFORMED_2
-        schema: HORROR_MOVIES_SCHEMA
+        database: PROD_TRANSFORM
+        schema: S3
+  SOURCE_POSTGRES:
+    mappingDefinitions:
+      "3":
+        database: PROD_SOURCE
+        schema: POSTGRES
   SOURCE_S3:
     mappingDefinitions:
       "3":
         database: PROD_SOURCE
-        schema: HORROR_MOVIES_SCHEMA
+        schema: S3
 macros: {}
 packages: {}
 projects: {}
